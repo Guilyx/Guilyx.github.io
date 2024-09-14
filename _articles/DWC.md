@@ -1,5 +1,5 @@
 ---
-layout:page
+layout: page
 title: The inseparable DWC and TDC
 ---
 For more technical questions on the DWC, refer [here](https://cds.cern.ch/record/702443/files/sl-note-98-023.pdf)
