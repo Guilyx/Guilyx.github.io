@@ -2,7 +2,7 @@
 layout: page
 title: "Cherenkov"
 ---
-![Basic Cherenkov](/saskiapoldmaa.github.io/docs/assets/xcet.gif)
+![Basic Cherenkov](/docs/assets/xcet.gif)
 
 Cherenkov detectors, also known by the abbreviation XCET in our experiment, are gas-filled detectors designed to determinine if a charged particle passing through them exceeds a specific cutoff momentum. If the particle is faster than the phase velocity of light in that gas, the gas will emit light (the principle that nothing can be faster than light only applies to the group velocity of light, not the phase velocity).
 
@@ -13,7 +13,7 @@ By using two Cherenkov detectors at different pressures, with two distinct momen
 To map the momentum of all particles in the beam, i.e. to measure the particles' spectrum, you need to perform a so-called pressure scan. For this, only one Cherenkov detector is necessary, but you need to vary the pressure in it from maximum to minimum. This can be done by initially pumping the detector full of gas and taking measurements while it gradually depressurizes.
 
 The results of pressure scans are usually given by # of particles in a spill that made the medium emit light. You get an idea of what fraction of particles emitted light by comparing this to the trigger rate - the total number of particles in a spill. This is a sample pressure scan from our testbeam:
-![Pressure scan](/saskiapoldmaa.github.io/docs/assets/che.png)
+![Pressure scan](/docs/assets/che.png)
 
 Here, the x-axis represents the pressure in the Cherenkov detector in bars. On the y-axis is the Cherenkov efficiency.
 The efficiency of a Cherenkov detector is truly not an efficiency; it is actually the fraction of particles that emit light or
