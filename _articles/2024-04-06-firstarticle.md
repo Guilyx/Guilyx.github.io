@@ -2,7 +2,7 @@
 layout: article
 title: "Cherenkov"
 ---
-![Basic Cherenkov](/assets/images/xcet.gif)
+![Basic Cherenkov](/images/xcet.gif)
 
 Cherenkov detectors, also known by the abbreviation XCET in our experiment, are gas-filled detectors designed to determinine if a charged particle passing through them exceeds a specific cutoff momentum. If the particle is faster than the phase velocity of light in that gas, the gas will emit light (the principle that nothing can be faster than light only applies to the group velocity of light, not the phase velocity).
 
