@@ -7,7 +7,7 @@ Not everything that a detector measures is actually a signal from an event that 
 For example, a trigger system that I should've used previously, but didn't, is recording  voltage signals only if they exceed some threshold voltage. How I did this was by requiring the Arduino to measure the voltage at every moment, but note it down only if it exceeds a threshold. This is not a trigger system, because the signal wasn't filtered BEFORE reaching the detector (Arduino's ADC). The trigger system that should've been attached before the ADC is given on the following picture.
 ![Easy trigger](/docs/assets/easy_trigger.png)
 The discriminator works just like a comparator. It's output is used as a reference point for when to take measurements. Thanks to the delay component, the comparator's output transition (from 'high' to 'low' or vice versa) occurs precisely when the signal reaches the ADC. The second transition, which signifies the end of the measurement, occurs as the tail end of the signal passes the ADC.
-![Discriminator](/docs/assets/discriminator.png)
+![Discriminator](/images/discriminator.png)
 Here you see the output of a dicriminator and its appearance on a NIM.
 
 Trigger systems can become very complicated, for example an extra layer of complexity is added if we take two previously explained trigger systems and combine the outputs of our two discriminators with an AND gate. This results in the coincidence method: if the voltage is above a treshold at both detectors simultaneously, then we know to take measurements. 
