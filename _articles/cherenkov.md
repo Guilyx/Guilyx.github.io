@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: page
 title: "Cherenkov"
 ---
 ![Basic Cherenkov](/saskiapoldmaa.github.io/docs/assets/xcet.gif)
