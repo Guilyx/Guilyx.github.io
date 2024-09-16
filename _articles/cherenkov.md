@@ -1,4 +1,5 @@
 ---
+category: major
 layout: page
 title: "Cherenkov"
 ---
