@@ -1,5 +1,8 @@
-This is where I'll combine blog posts depicting our journey to CERN, at CERN and maybe after CERN. I hope it'll come in handy for any nosy person or someone just going through a similar process.
-The learning materials are also added because:
-- the information we've received behind closed doors seems to be inaccessible on the internet at times
--  even if it's available, it's either at a graduate school level of dumbed down for a 5 year old
+Here you will find blog posts about our before, during and after being at CERN, but also learning materials catered to anyone that finds themselves in a similar situation to us. 
+Why I felt the need to add learning materials to this:
+- the information we've received in the process seems at times to not exist on the internet
+- - or it exists but only at a graduate school level
+-  this also helps me get a clearer, more peripheral picture of our experiment
+
+
   
