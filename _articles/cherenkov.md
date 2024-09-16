@@ -1,5 +1,5 @@
 ---
-category: major
+category: "major"
 layout: page
 title: "Cherenkov"
 ---
