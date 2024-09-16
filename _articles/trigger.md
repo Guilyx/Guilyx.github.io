@@ -6,6 +6,8 @@ category: "major"
 
 Not everything that a detector measures is actually a signal from an event that we're interested in (like a muon passing a scintillator). One way to filter out the junk is by data analysis, this is called triggerless DAQ (data acquisition). This entails noting down all datapoints you were ever able to measure. The data analysis method is actually too overpowered in this case, because the bulk of the junk data can be eliminated with something a lot simpler, like a relay logic. This is especially nice because we aren't wasting storage space on useless information. The relay logic or relay system can also be referred to as the umbrella term trigger logic (trigger system). This method, also known as synchronous DAQ is the main competitor of the triggerless DAQ.
 ![types of DAQ](/img/DAQtypes.png)
+<img src="/img/DAQtypes.png" alt="image" width="50%" height="auto">
+
 In the case of a synchronous DAQ, a trigger basically brushes through the signals like a haircomb: it organizes the signals into individual strands of hair (events), while brushing out all of the junk. Our data analysis software ROOT is built for handling data in events. 
 ![ROOT](/img/ROOT.png)
 On this picture, each branch is data, which we get from a detector or a single output of some detector. The entries in multiple branches were concurrent if they are in the same entry.
