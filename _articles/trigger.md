@@ -1,6 +1,6 @@
 ---
 layout: page
-category: major
+category: "major"
 title: Trigger system
 ---
 
