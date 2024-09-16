@@ -1,10 +1,10 @@
 # Site settings
-title: Mavericks' Blog
+title: Roadmap to CERN
 SEOTitle: Roadmap to CERN
 header-img: img/kosmo.png
 email: saskia.poldmaa@gmail.com
-description: "A roadmap to CERN, brought to you by team Mavericks | Blog + Learning materials"
-keyword: "BL4S, Detectors, Data Acquisition"
+description: "A roadmap to CERN, brought to you by team Mavericks - winners of BL4S 2024 competition. | Blog + Learning materials"
+keyword: "BL4S, Detectors, Data Acquisition, CERN, Geneva, Muons, T10 Beamline"
 url: "guilyx.github.com" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
