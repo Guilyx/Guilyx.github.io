@@ -5,9 +5,9 @@ category: "major"
 ---
 
 Not everything that a detector measures is actually a signal from an event that we're interested in (like a muon passing a scintillator). One way to filter out the junk is by data analysis, this is called triggerless DAQ (data acquisition). This entails noting down all datapoints you were ever able to measure. The data analysis method is actually too overpowered in this case, because the bulk of the junk data can be eliminated with something a lot simpler, like a relay logic. This is especially nice because we aren't wasting storage space on useless information. The relay logic or relay system can also be referred to as the umbrella term trigger logic (trigger system). This method, also known as synchronous DAQ is the main competitor of the triggerless DAQ.
-![types of DAQ](/img/in-post/DAQtypes.png)
+![types of DAQ](/img/DAQtypes.png)
 In the case of a synchronous DAQ, a trigger basically brushes through the signals like a haircomb: it organizes the signals into individual strands of hair (events), while brushing out all of the junk. Our data analysis software ROOT is built for handling data in events. 
-![ROOT](/img/in-post/ROOT.png)
+![ROOT](/img/ROOT.png)
 On this picture, each branch is data, which we get from a detector or a single output of some detector. The entries in multiple branches were concurrent if they are in the same entry.
 
 For example, a trigger system that I should've used previously, but didn't, is recording  voltage signals only if they exceed some threshold voltage. How I did this was by requiring the Arduino to measure the voltage at every moment, but note it down only if it exceeds a threshold. This is not a trigger system, because the signal wasn't filtered BEFORE reaching the detector (Arduino's ADC). The trigger system that should've been attached before the ADC is given on the following picture.
