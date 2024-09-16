@@ -1,7 +1,7 @@
 ---
 layout: page
-category: "major"
 title: Trigger system
+category: "major"
 ---
 
 Not everything that a detector measures is actually a signal from an event that we're interested in (like a muon passing a scintillator). One way to filter out the junk is by data analysis. This entails noting down all datapoints you were ever able to measure. The data analysis method is actually too overpowered in this case, because the bulk of the junk data can be eliminated with something a lot simpler, like a relay logic. This is especially nice because we aren't wasting storage space on useless information. The relay logic/system can also be referred to as the umbrella term trigger logic/system.
