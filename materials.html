@@ -1,0 +1,48 @@
+---
+layout: page
+title: "Materials"
+description: "For anyone in a similar situation"
+header-img: "img/about-bg.jpg"
+header-mask: 0.3
+multilingual: true
+---
+
+{% include multilingual-sel.html %}
+
+{% for art in site.articles %}
+    <div class="post-preview">
+        <a href="{{ art.url | prepend: site.baseurl }}">
+            {% if art.category == "major" %}
+                <h1 class="post-title">
+            {% else %}
+                <h2 class="post-title">
+            {% endif %}
+                {{ art.title }}
+            {% if art.category == "major" %}
+                </h1>
+            {% else %}
+                </h2>
+            {% endif %}
+            {% if art.subtitle %}
+                {% if art.category == "major" %}
+                    <h2 class="post-subtitle">
+                {% else %}
+                    <h3 class="post-subtitle">
+                {% endif %}
+                    {{ art.subtitle }}
+                {% if art.category == "major" %}
+                    </h2>
+                {% else %}
+                    </h3>
+                {% endif %}
+            {% endif %}
+            <div class="post-content-preview">
+                {% if art.lang == 'en' %}
+                    {{ art.content | strip_html | truncate:300 }}
+                {% else %}
+                    {{ art.content | strip_html | truncate:200 }}
+                {% endif %}
+            </div>
+        </a>
+    </div>
+{% endfor %}
