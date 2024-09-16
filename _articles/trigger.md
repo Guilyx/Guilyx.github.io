@@ -14,7 +14,7 @@ In the case of a synchronous DAQ, a trigger basically brushes through the signal
 On this picture, each branch is data, which we get from a detector or a single output of some detector. The entries in multiple branches were concurrent if they are in the same entry.
 
 For example, a trigger system that I should've used previously, but didn't, is recording  voltage signals only if they exceed some threshold voltage. How I did this was by requiring the Arduino to measure the voltage at every moment, but note it down only if it exceeds a threshold. This is not a trigger system, because the signal wasn't filtered BEFORE reaching the detector (Arduino's ADC). The trigger system that should've been attached before the ADC is given on the following picture.
-<img src="/doc/assets/easy_trigger.png" alt="image" width="100%" height="auto">
+<img src="/docs/assets/easy_trigger.png" alt="image" width="100%" height="auto">
 
 The discriminator works just like a comparator. It's output is used as a reference point for when to take measurements. Thanks to the delay component, the comparator's output transition (from 'high' to 'low' or vice versa) occurs precisely when the signal reaches the ADC. The second transition, which signifies the end of the measurement, occurs as the tail end of the signal passes the ADC.
 <img src="/images/discriminator.png" alt="image" width="100%" height="auto">
