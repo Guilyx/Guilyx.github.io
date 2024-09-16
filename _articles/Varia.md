@@ -1,6 +1,6 @@
 ---
 layout: page
-category: minor
+category: "minor"
 title: Varia
 ---
 
