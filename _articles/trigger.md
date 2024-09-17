@@ -21,9 +21,9 @@ The discriminator works just like a comparator. It's output is used as a referen
 
 Here you see the output of a dicriminator and its appearance on a NIM.
 
-In synchronous DAQ, events are never perfectly synchronous. Delays from wires of different lengths can be on the order of 100ns. Additionally, the time difference caused by a particle hitting two detectors is 3.3ns per meter. In our 6m testing area, this results in a delay of up to 20ns between the detectors. Both factors cause signals to arrive at different times.
+In synchronous DAQ, events are never perfectly synchronous. Delays from wires of different lengths can be on the order of 100ns. Additionally, the time difference caused by a particle hitting two detectors is 3.3ns per meter. In our 6m testing area, this results in a delay of up to 20ns between the detectors. Both factors cause signals to arrive at different times. This delay between the arrivals is the reason why coincidence modules have a regulatable signal width. 
 
-If we need to set three signals in coincidence, we should first group the two signals that arrive closest to each other. Then, we set the obtained coincidence signal into a second coincidence with the third signal. This helps us, since the length of a coincidence signal can be manually set. The 1st and 2nd signal only dictate the start of their coincidence signal, but not the end. So even if the 1st and 2nd signal decay before the arrivel of the 3rd, if we set our coincidence signal long enough, then there will be a moment in which we have both the coincidence of signal 1 & 2 and signal 3. 
+If we need to set three signals in coincidence, we should first set two of the signals in coincidence with each other and then set that signal into another coincidence with the 3rd signal. If we just set all of them into one big coincidence, then we could find that the some signal hasn't even arrived before another signal is already gone. This is because of the delays previously discussed, but also because the discriminator signals have an arbitrary (user-defined) length. It is easier for us to elongate the coincidence signal of inputs 1 & 2, in a way that signal 3 would aso fit in the coincidence window, then it is to elongate 2 discriminator signals. 
 <img src="/img/coincidence_better.png" alt="image" width="100%" height="auto">
 
 
